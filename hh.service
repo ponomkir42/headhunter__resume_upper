@@ -1,0 +1,14 @@
+[Unit]
+Description=hh_upper
+After=syslog.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/python/hh
+ExecStart=/usr/bin/python3 hh.py
+RestartSec=10
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
