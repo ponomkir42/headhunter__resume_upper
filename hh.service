@@ -1,12 +1,12 @@
 [Unit]
-Description=hh_upper
+Description=*имя процесса*
 After=syslog.target
 
 [Service]
 Type=simple
 User=ubuntu
-WorkingDirectory=/home/ubuntu/python/hh
-ExecStart=/usr/bin/python3 hh.py
+WorkingDirectory= # полный путь к директории файла*
+ExecStart= # имя файла, который будет перезапускать демон*
 RestartSec=10
 Restart=always
  
